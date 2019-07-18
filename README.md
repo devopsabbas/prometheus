@@ -1,5 +1,4 @@
 # Prometheus & Grafana for Kubernetes Monitoring 
-Prometheus &amp; Grafana for Kubernetes Monitoring 
 
 #### Step # 1 seprate Namespace needed ####
 
