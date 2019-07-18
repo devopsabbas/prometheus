@@ -3,7 +3,6 @@ Prometheus &amp; Grafana for Kubernetes Monitoring
 
 #### Step # 1 seprate Namespace needed ####
 
-#### Apply Namespace needed ####
      mansoor@LARC-MANSOOR ~ $ kubectl apply -f namespace.yaml 
      namespace/monitoring created
 
@@ -44,5 +43,11 @@ Prometheus &amp; Grafana for Kubernetes Monitoring
      mansoor@LARC-MANSOOR ~ $ kubectl get svc -n monitoring |grep grafana
      grafana-service      NodePort   10.64.8.172   <none>        3000:30544/TCP   130m
  
+ #### Step # 7 Access Grafana Dashboard
+ In order to acces Grafana Dashboard need to port forward 
+     
+     mansoor@LARC-MANSOOR ~ $ kubectl port-forward $(kubectl get pods -n monitoring |awk '{print $1}' |grep grafana) 3000:3000 -n monitoring
+
+
 
 
