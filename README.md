@@ -5,14 +5,14 @@ Prometheus &amp; Grafana for Kubernetes Monitoring
 mansoor@LARC-MANSOOR ~ $ vim namespace.yaml
 
     $ {
-    $   "kind": "Namespace",
-    $   "apiVersion": "v1",
-    $     "metadata": {
-    $       "name": "monitoring",
-    $       "labels": {
-    $         "name": "monitoring"
-    $       }
-    $     }
+       "kind": "Namespace",
+       "apiVersion": "v1",
+         "metadata": {
+           "name": "monitoring",
+           "labels": {
+             "name": "monitoring"
+           }
+         }
     $   }
 
 
